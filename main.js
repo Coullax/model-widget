@@ -39,12 +39,12 @@ class MessageWidget {
     const modelContainer = document.getElementById('model-container');
 
     // Render the Canvas and Experience components into the modelContainer
-    ReactDOM.render(
-      <Canvas dpr={[1, 2]} style={{display: 'block', width: '190px', height: '450px'}}>
-        <Experience />
-      </Canvas>,
-      modelContainer
-    );
+    // ReactDOM.render(
+    //   <Canvas dpr={[1, 2]} style={{display: 'block', width: '190px', height: '450px'}}>
+    //     <Experience />
+    //   </Canvas>,
+    //   modelContainer
+    // );
 
     
 
