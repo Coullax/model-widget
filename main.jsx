@@ -30,17 +30,18 @@ class MessageWidget {
      */
     const container = document.createElement("div");
     container.style.position = "fixed";
+    container.style.zIndex = "200000";
     Object.keys(this.position).forEach(
       (key) => (container.style[key] = this.position[key])
     );
     document.body.appendChild(container);
 
 
-    const modelContainer = document.getElementById('model-container');
-    const root = document.getElementById('app');
+    // const modelContainer = document.getElementById('model-container');
+    // const root = document.getElementById('app');
 
     // Render the Canvas and Experience components into the modelContainer
-    ReactDOM.createRoot(modelContainer).render(
+    ReactDOM.createRoot(container).render(
       <Canvas dpr={[1, 2]} style={{display: 'block', width: '190px', height: '450px'}}>
         <Experience />
       </Canvas>

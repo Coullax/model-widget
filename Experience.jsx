@@ -14,7 +14,7 @@ const Experience = () => {
         polar={[-0.1, Math.PI / 4]}
         rotation={[Math.PI / 8, Math.PI / 4, 0]}
       >
-        <Stage environment="city" intensity={0.6} castShadow={false}>
+        <Stage environment="city" intensity={0.9} castShadow={false} center >
           <Model />
         </Stage>
         {/* <mesh rotation={[-Math.PI / 2, 0, 0]} position-y={-2}>

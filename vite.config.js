@@ -11,7 +11,7 @@ export default {
     lib: {
       entry: 'src/main.jsx', // Your entry point
       name: 'MessageWidget', // The name of your library
-      fileName: (format) => `main.min.js`, // The output file name
+      fileName: (format) => `main.js`, // The output file name
     },
     rollupOptions: {
       // Additional Rollup options
