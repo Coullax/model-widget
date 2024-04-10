@@ -1,5 +1,5 @@
 import { CLOSE_ICON, MESSAGE_ICON, styles } from "./asset.js";
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import Experience from "./Experience.jsx";
 import { Canvas } from '@react-three/fiber';
 
@@ -37,14 +37,14 @@ class MessageWidget {
 
 
     const modelContainer = document.getElementById('model-container');
+    const root = document.getElementById('app');
 
     // Render the Canvas and Experience components into the modelContainer
-    // ReactDOM.render(
-    //   <Canvas dpr={[1, 2]} style={{display: 'block', width: '190px', height: '450px'}}>
-    //     <Experience />
-    //   </Canvas>,
-    //   modelContainer
-    // );
+    ReactDOM.createRoot(modelContainer).render(
+      <Canvas dpr={[1, 2]} style={{display: 'block', width: '190px', height: '450px'}}>
+        <Experience />
+      </Canvas>
+    );
 
     
 
